@@ -16,19 +16,114 @@
 
 </head>
 
-<body>
+<body class="font-inter">
     <!-- Header Area Start -->
     <header>
 
     </header>
     <!-- Header Area End -->
     <!-- Main Area Start -->
-    <main>
+    <main class="mt-8 text-text-color">
         <!-- Container Start -->
         <div class="container mx-auto">
-
-        </div>
-        <!-- Container End -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Triangle Card Area Start -->
+                <div class="card justify-end">
+                    <img src="./images/triangle.png" alt="Triangle image" class="w-60">
+                    <h1 class="text-xl font-bold my-4">Triangle</h1>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex gap-2 justify-center mt-6">
+                        <input type="number" name="triangleBase" placeholder="Base" id="triangleBase"
+                            class="input-field">
+                        <p>cm</p>
+                        <input type="number" name="triangleHeight" placeholder="Height" id="triangleHeight"
+                            class="input-field">
+                        <p>cm</p>
+                    </div>
+                    <button id="calculateTringleArea" class="btn">Calculate</button>
+                </div>
+                <!-- Triangle Card Area End -->
+                <!-- Rectangle Card Area Start -->
+                <div class="card justify-end">
+                    <img src="./images/rectangle.png" alt="Rectangle image" class="w-72">
+                    <h1 class="text-xl font-bold my-4">Rectangle</h1>
+                    <p>Area (A) = w X l</p>
+                    <div class="flex gap-2 justify-center mt-6">
+                        <input type="number" name="rectangleWidth" placeholder="Width" id="rectangleWidth"
+                            class="input-field">
+                        <p>cm</p>
+                        <input type="number" name="rectangleLength" placeholder="Length" id="rectangleLength"
+                            class="input-field">
+                        <p>cm</p>
+                    </div>
+                    <button id="calculateRectangleArea" class="btn">Calculate</button>
+                </div>
+                <!-- Rectangle Card Area End -->
+                <!-- Parallelogram Card Area Start -->
+                <div class="card justify-end">
+                    <img src="./images/parallelogram.png" alt="Parallelogram image" class="">
+                    <h1 class="text-xl font-bold my-4">Parallelogram</h1>
+                    <p>Area (A) = 0.5 X b X h</p>
+                    <div class="flex gap-2 justify-center mt-6">
+                        <input type="number" name="parallelogramBase" placeholder="Base" id="parallelogramBase"
+                            class="input-field">
+                        <p>cm</p>
+                        <input type="number" name="parallelogramHeight" placeholder="Height" id="parallelogramHeight"
+                            class="input-field">
+                        <p>cm</p>
+                    </div>
+                    <button id="calculateParallelogramArea" class="btn">Calculate</button>
+                </div>
+                <!-- Parallelogram Card Area End -->
+                <!-- Rhombus Card Area Start -->
+                <div class="card justify-end">
+                    <img src="./images/rhombus.png" alt="Rhombus image" class="">
+                    <h1 class="text-xl font-bold my-4">Rhombus</h1>
+                    <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                    <div class="flex gap-2 justify-center mt-6">
+                        <input type="number" name="rhombusD1" placeholder="d1" id="rhombusD1" class="input-field">
+                        <p>cm</p>
+                        <input type="number" name="rhombusD2" placeholder="d2" id="rhombusD2" class="input-field">
+                        <p>cm</p>
+                    </div>
+                    <button id="calculateRhombusArea" class="btn">Calculate</button>
+                </div>
+                <!-- Rhombus Card Area End -->
+                <!-- Pentagon Card Area Start -->
+                <div class="card justify-end">
+                    <img src="./images/pentagon.png" alt="Pentagon image" class="">
+                    <h1 class="text-xl font-bold my-4">Pentagon</h1>
+                    <p>Area (A) = 0.5 X p X b</p>
+                    <div class="flex gap-2 justify-center mt-6">
+                        <input type="number" name="pentagonP" placeholder="p" id="pentagonP" class="input-field">
+                        <p>cm</p>
+                        <input type="number" name="pentagonB" placeholder="b" id="pentagonB" class=" input-field">
+                        <p>cm</p>
+                    </div>
+                    <button id="calculatePentagonArea" class="btn">Calculate</button>
+                </div>
+                <!-- Pentagon Card Area End -->
+                <!-- Ellipse Card Area Start -->
+                <div class="card justify-end">
+                    <img src="./images/ellipse.png  " alt="Ellipse image" class="">
+                    <h1 class="text-xl font-bold my-4">Ellipse</h1>
+                    <p>Area (A) = πab</p>
+                    <div class="flex gap-2 justify-center mt-6">
+                        <input type="number" name="ellipseA" placeholder="a" id="ellipseA" class="input-field">
+                        <p>cm</p>
+                        <input type="number" name="ellipseB" placeholder="b" id="ellipseB" class="input-field">
+                        <p>cm</p>
+                    </div>
+                    <button id="calculateπArea" class="btn">Calculate</button>
+                </div>
+                <!-- Ellipse Card Area End -->
+                <!-- Area Calculation Section Start -->
+                <section id="areaCalculation" class="card row-[-1] col-[-1]  w-60">
+                    <h1 class="font-bold mb-4 text-xl">Area Calculation</h1>
+                </section>
+                <!-- Area Calculation Section End -->
+            </div>
+            <!-- Container End -->
     </main>
     <!-- Main Area End -->
     <!-- Footer Area Start -->
