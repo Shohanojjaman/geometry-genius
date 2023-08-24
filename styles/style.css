@@ -597,7 +597,7 @@ video {
 }
 
 .btn {
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   width: 100%;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
@@ -608,11 +608,6 @@ video {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.area-calculation-p {
-  margin-bottom: 0.5rem;
-  text-align: left;
 }
 
 .col-\[-1\] {
@@ -633,12 +628,12 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-6 {
@@ -683,10 +678,6 @@ video {
 
 .gap-6 {
   gap: 1.5rem;
-}
-
-.text-left {
-  text-align: left;
 }
 
 .font-inter {
