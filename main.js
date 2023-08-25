@@ -18,6 +18,15 @@ function setValue(elementId, value) {
   element.innerText = value;
 }
 
+function areaCalculation(type, area) {
+  let areaCalculation = document.getElementById('areaCalculation');
+  const count = areaCalculation.childElementCount;
+  let areaCalculationContent = document.createElement('p');
+  areaCalculationContent.innerHTML = `${count}. ${type} ${area}cm<sup>2</sup>`;
+  areaCalculationContent.setAttribute('class', 'area-calculation-p');
+  areaCalculation.appendChild(areaCalculationContent);
+}
+
 // Calculate Triangle Area
 document.getElementById('calculateTriangleArea').addEventListener('click', function () {
   const triangleBase = getValueFromInput('triangleBase');
@@ -32,6 +41,9 @@ document.getElementById('calculateTriangleArea').addEventListener('click', funct
   const triangleArea = 0.5 * triangleBase * triangleHeight;
 
   setValue('triangleArea', triangleArea);
+
+  // Set Value to Area Calculation
+  areaCalculation('Triangle', triangleArea);
 });
 
 // Calculate Rectangle Area
@@ -47,6 +59,8 @@ document.getElementById('calculateRectangleArea').addEventListener('click', func
 
   const rectangleArea = rectangleLength * rectangleWidth;
   setValue('rectangleArea', rectangleArea);
+
+  areaCalculation('Rectangle', rectangleArea);
 });
 
 // Calculate Parallelogram Area
@@ -62,6 +76,8 @@ document.getElementById('calculateParallelogramArea').addEventListener('click', 
 
   const parallelogramArea = 0.5 * parallelogramBase * parallelogramHeight;
   setValue('parallelogramArea', parallelogramArea);
+
+  areaCalculation('Parallelogram', parallelogramArea);
 });
 
 // Calculate Rhombus Area
@@ -76,6 +92,8 @@ document.getElementById('calculateRhombusArea').addEventListener('click', functi
   }
   const rhombusArea = 0.5 * rhombusD1 * rhombusD2;
   setValue('rhombusArea', rhombusArea);
+
+  areaCalculation('Rhombus', rhombusArea);
 });
 
 // Calculate Pentagon Area
@@ -91,6 +109,8 @@ document.getElementById('calculatePentagonArea').addEventListener('click', funct
 
   const pentagonArea = 0.5 * pentagonP * PentagonB;
   setValue('pentagonArea', pentagonArea);
+
+  areaCalculation('Pentagon', pentagonArea);
 });
 
 // calculate Ellipse Area
@@ -106,4 +126,6 @@ document.getElementById('calculateEllipseArea').addEventListener('click', functi
   const PI = Math.PI;
   const ellipseArea = (PI * ellipseA * ellipseB).toFixed(2);
   setValue('ellipseArea', ellipseArea);
+
+  areaCalculation('Ellipse', ellipseArea);
 });
